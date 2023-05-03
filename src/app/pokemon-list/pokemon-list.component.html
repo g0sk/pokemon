@@ -1,0 +1,12 @@
+<p>pokemon list</p>
+<div>
+  <button (click)="searchPokemon()">Search</button>
+  <div *ngIf="pokemon">
+    <img
+      src="{{ pokemon.sprites.front_default }}"
+      alt="pokemon-image"
+      style="width: 500; height: 500"
+    />
+  </div>
+  {{ pokemon.name }}
+</div>
